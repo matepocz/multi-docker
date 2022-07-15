@@ -1,4 +1,5 @@
-FROM node:16-alpine AS builder
+FROM node:14-14.0-alpine AS builder
+USER node
 RUN mkdir -p /home/node/app
 WORKDIR '/home/node/app'
 RUN npm install
